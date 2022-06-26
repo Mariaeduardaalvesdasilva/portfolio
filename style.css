@@ -1,0 +1,184 @@
+
+}
+  
+body {
+     /* Definindo a fonte de todo nosso body */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+li {
+     /* retirando as bolinhas das nossas listas */
+    list-style: none;
+}
+
+.hearder-menu{
+ /* // Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens. */
+    display: flex;
+    position: fixed; /*Deixa o nosso header fixo*/
+    inline-size: 100%; /*Largura*/
+    padding: 8px; /*Espaçamento dos 4 lados*/
+    padding-block-end: 10px;  /*Espaçamento inferior*/
+    padding: top 10px;px; /*Espaçamento superior  #724796*/
+    block-size: 60px;
+    background-color:#06b426;
+}
+
+.hearder-menu nav{
+    display: flex;
+    justify-content: space-between;
+    inline-size: 100%;
+}
+
+.lista-menu{
+    display:flex;
+    justify-content: space-between; /*Espaçamento entre eles seja igual*/
+    inline-size: 100%;
+    list-style: none;
+    align-items: center;
+}
+
+.lista-menu li>a{
+    /*Pegando os itens com tag a de dentro da nossa lista */
+    color: #FFF;
+    font-size: 15px;
+    text-decoration: inherit;
+}
+
+.principal{
+    block-size: 100vh;
+    display: flex;
+    background-color: #439874;
+}
+
+.container{
+    margin-inline-end: auto; /*uma margem automática para todos os lados*/
+    margin-inline-start: auto;
+    max-inline-size: 700px; /*largura maxima*/
+    padding-inline-end: 10px; /*Espaçamento direito*/
+    padding-inline-start: 10px; /*Espaçamento esquerdo*/
+    inline-size: 100%; /*largura*/
+}
+
+.subcontainer-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    text-align: center;
+  }
+
+.foto-perfil{
+  inline-size:500px; 
+  block-size:500px; 
+}
+
+.nome-completo{
+    font-size: 10px;
+    color: #00d338;
+    font-weight: 700;
+    block-size: 30px;
+}
+
+.profissao{
+    font-size: 20px;
+    line-height: 45px;
+    color: #68f396;
+}
+
+.segundaria{
+    block-size: 100vh;
+    display: flex;
+    background-color: #FFF;
+}
+
+.article-lista{
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 70px;
+    margin-block-end: 70px;
+}
+
+.topico-principal{
+    font-size: 15px;
+    color: #7ed6a7;
+}
+
+.lista-item{
+    padding: 32px;
+}
+
+.lista-item ul li{
+    margin-block-end: 32px;
+}
+
+.lista-titulo{
+    margin-block-end: 9px;
+    font-size: 22px;
+    color: #00943e;
+    font-weight: 600;
+    font-weight: 600;
+}
+
+.lista-local{
+    font-size: 18px;
+    color: #81e290;
+}
+
+.lista-descricao{
+    font-size: 18px;
+    margin-block-start: 5px;
+    line-height: 20px;
+    color: 0000;    ;
+    font-weight: 600;
+}
+
+.wrapper-portfolio{
+    background-color: #64c6a2;
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitulo-lista{
+    font-size: 18px;
+    color: #32d435;
+    font-weight: 700;
+}
+
+.footer{
+    background-color: #FFF;
+    block-size: 30vh;
+    display: flex;
+    align-items:'esquerdo'
+}
+
+.lista-footer li{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 18px;
+    margin-block-end: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.estilo-icon{
+    font-size: 32px;
+    margin-inline-end: 10px;
+    color: #b7c2b9;
+}
+
+.links{
+    text-decoration: none;
+    color: #91d599;
+}
+
+li {
+  margin-block-end: .5rem;
+}
+
+@media only screen and (max-inline-size: 600px) {
+  .lista-menu {
+      justify-content: space-between;
+      inline-size: 100%;
+  }
+}
